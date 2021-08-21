@@ -26,29 +26,22 @@
                 $books=selectAllBook();
             }
             foreach ($books as $book):
-                $description=readMore($book['description'],200);
+                // $description=readMore($book['description'],200);
         ?>
-        <div class="card">
-            <div class="card-body" >
-               <div class="d-flex">
+        <div class="col-3">
+            <div class="card mb-2 ml-4 shadow-lg  bg-white rounded " style="width: 17rem; ">
+                <div class="card-body">
                     <div class="card-image mr-3">
-                        <img class="img-fluid" width="250" src="assets/image/<?=$book['image'] ?>" alt="">
+                        <img class="img-fluid" width="200" src="./assets/image/<?=$book['image'] ?>" alt="">
                     </div>
-                    <div class="info">
-                        <h1 class="display-4">Title:<?=$book['title'] ?></h1>
-                        <strong>Price:<?=$book['price'] ?></strong> <br>
-                        <strong>ISBN:<?=$book['isbn'] ?></strong> 
-                        <p>Publish:<?=$book['publish'] ?></p>
-
-                        <p style="box-sizing: content-box;"><?=$description?></p>
-                        <a href="readMore/detail.php?id=<?=$book['book_id']?> " class="btn btn-primary ">Read More</a>    
-                    </div>
-               </div>
-                <div class="action d-flex justify-content-end">
-                    <a href="process/updatebook_html.php?id=<?=$book['book_id'] ?>" class="btn btn-primary btn-sm mr-2"><i class="fa fa-pencil"></i></a>
-                    <a href="process/deletebook.php?id=<?=$book['book_id'] ?>" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+                    <a href="readMore/detail.php?postID=<?= $book['book_id'] ?>">
+                        <h5 class="card-title"><?= $book['title'] ?></h5>
+                    </a>
                 </div>
             </div>
+        </div>
+        <div class="pictureCard">
+            
         </div>
         <?php endforeach; ?>
     </div>

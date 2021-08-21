@@ -63,10 +63,10 @@ function createBook($value, $image) {
     $description=$value['description'];
     $category_id = 1;
     $author_id = 1;
-    if ($title !="" && $price="" && $isbn !="" && $publish !="" && $description !="" ){
+    if ($title !="" && $price !="" && $isbn !="" && $publish !="" && $description !="" ){
         database()->query("INSERT INTO books(title,price,isbn,publish,description,image,category_id,author_id) VALUES('$title','$price','$isbn','$publish','$description','$image','$category_id','$author_id')");
         header("Location: http://localhost/vicheka_ebook/?page=home");
-    } 
+    }
     
 }
 function searchByTitle($title){
@@ -78,16 +78,16 @@ function readMore($text,$number){
     return substr($text,0,$number);
 }
 
-function login($value){
-    $admin = $value['userName'];
-    $email = $value['email'];
-    $phone = $value['phone'];
-    $password = $value['password'];
-    $login = false;
-    $getUser = database()->query("SELECT * FROM users");
-    foreach ($getUser as $user){
-        if ($user["email"] == $email and $user["password"] == $password){
-            $login = true;
-        }
-    } return $login;
-}
+// function login($value){
+//     $admin = $value['userName'];
+//     $email = $value['email'];
+//     $phone = $value['phone'];
+//     $password = $value['password'];
+//     $login = false;
+//     $getUser = database()->query("SELECT * FROM users");
+//     foreach ($getUser as $user){
+//         if ($user["email"] == $email and $user["password"] == $password){
+//             $login = true;
+//         }
+//     } return $login;
+// }

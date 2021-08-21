@@ -20,7 +20,7 @@
                 <input type="file"  class="form-control"  name="file" id="file">
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-primary btn-block" name="submit" value="submit" ></input>
+                <button type="submit" class="btn btn-primary btn-block" name="submit" >Create</button>
             </div>
         </form>
     </div>

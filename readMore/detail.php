@@ -15,7 +15,7 @@
         <div class="card-body">
             <div class="d-flex ">
                     <div class="card-image mr-3">
-                        <img class="img-fluid" width="200" src="assets/image/<?=$book['image'] ?>" alt="image">
+                        <img class="img-fluid" width="200" src="../assets/image/<?=$book['image'] ?>" alt="image">
                     </div>
                     <div class="info">
                         <h1 class="display-4">Title:<?=$book['title'] ?></h1>

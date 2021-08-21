@@ -63,5 +63,8 @@ body {
   text-align: center;
   color: rgb(44, 13, 73);
 }
+#flex{
+  display: flex;
+}
 
 
