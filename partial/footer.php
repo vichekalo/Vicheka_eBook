@@ -13,7 +13,7 @@
     <div class="d-flex">
       <div class="col-md-4">
         <h5>About Us</h5>
-        <p>Daily News Digital Corporation is a leading digital information and entertainment company in Cambodia. More information</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
       </div>
      
       <div class="col-md-4" style="margin-left:9%">
@@ -23,8 +23,7 @@
             <ul class="list-unstyled">
               <li><a href="?page=home">Home</a></li>
               <li><a href="?page=author">Author</a></li>
-              <li><a href="?page=category">Category</a></li>
-              <li><a href="?page=login">Contect Us</a></li>
+              <li><a href="?page=aboutus">About Us</a></li>
             </ul>
           </div>
         </div>

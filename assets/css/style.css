@@ -57,14 +57,84 @@ body {
   margin-top: 15%;
   width: 100%;
   height: 40vh;
+
   
+}
+#kk{
+  background: gray;
+  margin-top: 15%;
+  width: 40%;
+  height: 50vh;
+  margin-left: 30%;
+  margin-bottom: 5%;
 }
 .welcome{
   text-align: center;
   color: rgb(44, 13, 73);
 }
-#flex{
+#titlebook{
+  color: red;
+}
+#reaction{
   display: flex;
+  
+}
+#log{
+  background: gray;
+  margin-top: 15%;
+  height: 50vh;
+  width: 50%;
 }
 
+.loginH{
+  margin: auto;
+  
+}
+#f{
+  width: 200%;
+  margin-left: 70%;
+  margin-top: 20%;
+ 
+}
+.centered{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr ;
 
+}
+.box1,.box2,.box3,.box4{
+  width: 80%;
+  background: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 10%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  
+}
+.box1{
+  background: green;
+  color: white;
+}
+.box2{
+  background: red;
+  color: white;
+}
+.box3{
+  background: blueviolet;
+  color: white;
+}
+.box4{
+  background: blue;
+  color: white;
+}
+.contacting{
+  display: flex;
+}
+#infor{
+  background: rgb(23, 155, 100);
+}
+#nameuser{
+  margin-left: 55%;
+  color: red;
+}

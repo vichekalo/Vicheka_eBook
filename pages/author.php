@@ -3,9 +3,6 @@
         <div class="d-flex justify-content-end p-2">
             <a href="#" class="btn btn-primary">hide</a>
         </div>
-        <div class="d-flex justify-content-end p-2">
-            <a href="create_html.php" class="btn btn-primary">Add +</a>
-        </div>
         <?php
             require_once('database/database.php');
             $authors=selectAllAuthor();
@@ -20,13 +17,8 @@
                     <div class="info">
                         <h1 class="display-4">Name:<?=$author['author_name'] ?></h1>
                         <span>Birthday:<?=$author['birthday'] ?></span>
-                    </div>
-                    
+                    </div>   
                </div>
-                <div class="action d-flex justify-content-end">
-                    <a href="update_html.php?id=<?=$author['author_id'] ?>" class="btn btn-primary btn-sm mr-2"><i class="fa fa-pencil"></i></a>
-                    <a href="delete_model.php?id=<?=$author['author_id'] ?>" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
-                </div>
             </div>
         </div>
         <?php endforeach; ?>

@@ -1,18 +1,9 @@
 <?php require_once('partial/header.php'); ?>
     <div class="container p-4" >
-        <div  id="welcome">
-           <h1 class="welcome">Welcome To Our Khmer-eBook</h1> 
-           <p class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-           <br><form action="" method="post" id="search">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Search places" name="search">
-                    <div class="input-group-append">
-                        <button class="btn btn-success" type="submit">Search</button>
-                    </div>
-                </div>
-            </form>
+        <div class="d-flex justify-content-end p-2">
+            <a href="process/createbook_html.php" class="btn btn-primary">hide</a>
         </div>
-        
+
         <div class="d-flex justify-content-end p-2">
             <a href="process/createbook_html.php" class="btn btn-primary">Add +</a>
         </div>
